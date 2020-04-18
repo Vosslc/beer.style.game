@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import {CardList} from "./Components/card-list/card-list.Component";
 import "./App.css";
 
 class App extends Component {
@@ -16,18 +16,19 @@ class App extends Component {
       .then((response) => {
         return response.json();
       })
-      .then((breweries) => this.setState({breweries : breweries}));
+      .then((breweries) => this.setState({ breweries: breweries }));
   }
 
   render() {
-    console.log(this.state.breweries)
+    console.log(this.state.breweries);
     return (
       <div className="App">
-        <h1>Brewery</h1>
-      
-        {this.state.breweries.map(brewery => (
+        <CardList name="brewery-names">
+          <h1>Brewery</h1>
+        </CardList>
+
+        {this.state.breweries.map((brewery) => (
           <h4 key={brewery.id}>{brewery.name}</h4>
-          
         ))}
       </div>
     );
