@@ -1,6 +1,15 @@
+#search-breweries{
+  margin: 75px 0px 75px;
+  width: 50vw;
+
+}
+
+
 .App {
   text-align: center;
+
 }
+
 
 .App-logo {
   height: 40vmin;

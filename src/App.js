@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { CardList } from "./Components/CardList/card-list.Component";
 import "./App.css";
+import { InputGroup, InputGroupAddon, Button, Input } from "reactstrap";
 
 class App extends Component {
   constructor() {
@@ -8,6 +9,7 @@ class App extends Component {
 
     this.state = {
       breweries: [],
+      searchField: "",
     };
   }
 
@@ -23,6 +25,18 @@ class App extends Component {
     console.log(this.state.breweries);
     return (
       <div className="App">
+        <div id="search-breweries">
+          <InputGroup>
+            <Input
+              type="search"
+              placeholder="Search Breweries"
+              onChange={(e) => this.setState({ searchField: e.target.value })}
+            />
+            <InputGroupAddon addonType="append">
+              <Button color="secondary">To the Right!</Button>
+            </InputGroupAddon>
+          </InputGroup>
+        </div>
         <CardList breweries={this.state.breweries}></CardList>
       </div>
     );
