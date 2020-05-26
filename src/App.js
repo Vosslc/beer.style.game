@@ -23,6 +23,10 @@ class App extends Component {
 
   render() {
     console.log(this.state.breweries);
+    const { breweries, searchField } = this.state;
+    const filteredBreweries = breweries.filter((breweries) =>
+      breweries.name.toLowerCase().includes(searchField.toLowerCase())
+    );
     return (
       <div className="App">
         <div id="search-breweries">
@@ -37,7 +41,7 @@ class App extends Component {
             </InputGroupAddon>
           </InputGroup>
         </div>
-        <CardList breweries={this.state.breweries}></CardList>
+        <CardList breweries={filteredBreweries}></CardList>
       </div>
     );
   }
