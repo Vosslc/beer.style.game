@@ -10,6 +10,18 @@
 
 }
 
+#search-beers{
+  float: center;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 20px;
+  color: #61dafb;
+  width: 50%;
+  
+}
+
 
 .App-logo {
   height: 40vmin;

@@ -4,10 +4,14 @@ import "./card.style.css";
 export const Card = (props) => (
   <div className="card-container">
     <img
-      src={`https://robohash.org/${props.brewery.id}?set=set4&size=180x180`}
+      // src={`https://robohash.org/${props.brewery.id}?set=set4&size=180x180`}
+      // src={`https://images.punkapi.com/v2/${props.brewery.id.image_url}`}
+      // src={`https://images.punkapi.com/${props.brewery.id.image_url}`}
       alt=""
     />
-    <h4><strong>Brewery: </strong>{props.brewery.name}</h4>
-    <p><strong>State: </strong>{props.brewery.state}</p>
+    <img className="beer-img" src={props.brewery.image_url}/>
+    <p><strong>Beer: </strong>{props.brewery.name}</p>
+    <p><strong>Tagline: </strong>{props.brewery.tagline}</p>
+    <p><strong>Description: </strong>{props.brewery.description}</p>
   </div>
 );

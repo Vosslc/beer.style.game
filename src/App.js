@@ -8,40 +8,41 @@ class App extends Component {
     super();
 
     this.state = {
-      breweries: [],
+      beers: [],
       searchField: "",
     };
   }
 
   componentDidMount() {
-    fetch("https://api.openbrewerydb.org/breweries")
+    fetch("https://api.punkapi.com/v2/beers")
+    // fetch("https://api.openbrewerydb.org/breweries")
       .then((response) => {
         return response.json();
       })
-      .then((breweries) => this.setState({ breweries: breweries }));
+      .then((beers) => this.setState({ beers: beers }));
   }
 
   render() {
-    console.log(this.state.breweries);
-    const { breweries, searchField } = this.state;
-    const filteredBreweries = breweries.filter((breweries) =>
-      breweries.name.toLowerCase().includes(searchField.toLowerCase())
+    console.log(this.state.beers);
+    const { beers, searchField } = this.state;
+    const filteredBeers = beers.filter((beers) =>
+      beers.name.toLowerCase().includes(searchField.toLowerCase())
     );
     return (
       <div className="App">
-        <div id="search-breweries">
+        <div id="search-beers">
           <InputGroup>
             <Input
               type="search"
-              placeholder="Search Breweries"
+              placeholder="Find Beer . . ."
               onChange={(e) => this.setState({ searchField: e.target.value })}
             />
             <InputGroupAddon addonType="append">
-              <Button color="secondary">To the Right!</Button>
+              <Button color="secondary">Search Beer</Button>
             </InputGroupAddon>
           </InputGroup>
         </div>
-        <CardList breweries={filteredBreweries}></CardList>
+        <CardList beers={filteredBeers}></CardList>
       </div>
     );
   }
