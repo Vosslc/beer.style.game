@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import { CardList } from "./Components/CardList/card-list.Component";
 import "./App.css";
-import { InputGroup, InputGroupAddon, Button, Input } from "reactstrap";
+
+import { CardList } from "./Components/CardList/card-list.Component";
+import { SearchBox } from "./Components/search-box/search-box";
 
 class App extends Component {
   constructor() {
@@ -15,7 +16,7 @@ class App extends Component {
 
   componentDidMount() {
     fetch("https://api.punkapi.com/v2/beers")
-    // fetch("https://api.openbrewerydb.org/breweries")
+      // fetch("https://api.openbrewerydb.org/breweries")
       .then((response) => {
         return response.json();
       })
@@ -30,19 +31,13 @@ class App extends Component {
     );
     return (
       <div className="App">
-        <div id="search-beers">
-          <InputGroup>
-            <Input
-              type="search"
-              placeholder="Find Beer . . ."
-              onChange={(e) => this.setState({ searchField: e.target.value })}
-            />
-            <InputGroupAddon addonType="append">
-              <Button color="secondary">Search Beer</Button>
-            </InputGroupAddon>
-          </InputGroup>
+        <div id="beers-app">
+          <SearchBox
+            placeholder="Find Beer . . ."
+            handleChange={(e) => this.setState({ searchField: e.target.value })}
+          />
         </div>
-        <CardList beers={filteredBeers}></CardList>
+        <CardList beers={filteredBeers} />
       </div>
     );
   }

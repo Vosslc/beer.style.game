@@ -1,11 +1,20 @@
-import React from 'react'
+import React from "react";
 
-import "./search-box.styles.css"
+// import { InputGroup, InputGroupAddon, Button } from "reactstrap";
+import "./search-box.styles.css";
 
-export default function search-box() {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+export const SearchBox = ({ placeholder, handleChange }) => (
+  <div>
+    {/* <InputGroup>
+      <InputGroupAddon addonType="append">
+        <Button color="secondary">Search Beer</Button>
+      </InputGroupAddon>
+    </InputGroup> */}
+      <input
+        className="search"
+        type="search"
+        placeholder={placeholder}
+        onChange={handleChange}
+      />
+  </div>
+);

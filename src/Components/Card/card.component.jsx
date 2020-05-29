@@ -9,7 +9,7 @@ export const Card = (props) => (
       // src={`https://images.punkapi.com/${props.brewery.id.image_url}`}
       alt=""
     />
-    <img className="beer-img" src={props.brewery.image_url}/>
+    <img className="beer-img" src={props.brewery.image_url} alt=""/>
     <p><strong>Beer: </strong>{props.brewery.name}</p>
     <p><strong>Tagline: </strong>{props.brewery.tagline}</p>
     <p><strong>Description: </strong>{props.brewery.description}</p>
