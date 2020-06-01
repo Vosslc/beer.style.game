@@ -12,6 +12,6 @@ export const Card = (props) => (
     <img className="beer-img" src={props.brewery.image_url} alt=""/>
     <p><strong>Beer: </strong>{props.brewery.name}</p>
     <p><strong>Tagline: </strong>{props.brewery.tagline}</p>
-    <p><strong>Description: </strong>{props.brewery.description}</p>
+    <p className="beer-card-description"><strong>Description: </strong>{props.brewery.description}</p>
   </div>
 );
