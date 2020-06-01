@@ -11,11 +11,12 @@ class App extends Component {
     this.state = {
       beers: [],
       searchField: "",
+      beerPage: 1
     };
   }
 
   componentDidMount() {
-    fetch("https://api.punkapi.com/v2/beers")
+    fetch(`https://api.punkapi.com/v2/beers?per_page=20&page=${this.state.beerPage}`)
       // fetch("https://api.openbrewerydb.org/breweries")
       .then((response) => {
         return response.json();
@@ -38,6 +39,9 @@ class App extends Component {
           />
         </div>
         <CardList beers={filteredBeers} />
+        <button>back</button>
+        <h1>Page: {this.state.beerPage}</h1>
+        <button onClick={(e) => this.setState({beerPage: this.state.beerPage+1})}>next</button>
       </div>
     );
   }
