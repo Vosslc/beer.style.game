@@ -1,16 +1,38 @@
-#search-breweries{
+#search-breweries {
   margin: 75px 0px 75px;
   width: 50vw;
-
 }
-
 
 .App {
   text-align: center;
+  background-image: url(./Assets/AppAssests/beerImg.jpg);
+
+  /* Set a specific height */
+  height: 800px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
 
 }
 
-#search-beers{
+.beer-app {
+  background: linear-gradient(
+    to left,
+    rgba(7, 27, 81, 1) 0%,
+    rgba(0, 128, 128, 1) 100%
+    );
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+#search-beers {
   float: center;
   padding: 6px;
   border: none;
@@ -19,41 +41,10 @@
   font-size: 20px;
   color: #61dafb;
   width: 50%;
-  
 }
 
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
+.app-title {
+  font-family: "Bigelow Rules";
+  font-size: 72px;
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
