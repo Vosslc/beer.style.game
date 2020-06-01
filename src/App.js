@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./App.css";
+import "./App.scss";
 
 import { CardList } from "./Components/CardList/card-list.Component";
 import { SearchBox } from "./Components/search-box/search-box";
@@ -49,7 +49,7 @@ class App extends Component {
         </div>
         <CardList beers={filteredBeers} />
         <button>back</button>
-        <h1>Page: {this.state.beerPage}</h1>
+        <h1 className="current-page">Page: {this.state.beerPage}</h1>
         <button
           onClick={(e) => this.setState({ beerPage: this.state.beerPage + 1 })}
         >
