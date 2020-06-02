@@ -31,16 +31,39 @@ class App extends Component {
     this.setState({ searchField: e.target.value });
   };
 
+  // backButton() {
+  //   if (onClick={(e) => this.setState({ beerPage: this.state.beerPage - 1})})
+  // }
+
   render() {
     console.log(this.state.beers);
     const { beers, searchField } = this.state;
     const filteredBeers = beers.filter((beers) =>
       beers.name.toLowerCase().includes(searchField.toLowerCase())
     );
+
+    let { beerPage } = this.state;
+    const showBackbtn = () => {
+      if (beerPage >= 2) {
+        return (
+          <button
+            onClick={(e) =>
+              this.setState({ beerPage: this.state.beerPage - 1 })
+            }
+          >
+            {" "}
+            Back{" "}
+          </button>
+        );
+      } else {
+        return;
+      }
+    };
+
     return (
       <div className="App">
         <div className="beer-app">
-          <p className = 'app-title'> Brewdog Beer Search</p>
+          <p className="app-title"> Brewdog Beer Search</p>
 
           <SearchBox
             placeholder="Find Beer . . ."
@@ -48,7 +71,12 @@ class App extends Component {
           />
         </div>
         <CardList beers={filteredBeers} />
-        <button>back</button>
+        {/* <button
+          onClick={(e) => this.setState({ beerPage: this.state.beerPage - 1 })}
+        >
+          back
+        </button> */}
+        {showBackbtn()}
         <h1 className="current-page">Page: {this.state.beerPage}</h1>
         <button
           onClick={(e) => this.setState({ beerPage: this.state.beerPage + 1 })}
