@@ -18,7 +18,7 @@ class App extends Component {
 
   componentDidMount() {
     fetch(
-      `https://api.punkapi.com/v2/beers?per_page=20&page=${this.state.beerPage}`
+      `https://api.punkapi.com/v2/beers?per_page=10&page=${this.state.beerPage}`
     )
       // fetch("https://api.openbrewerydb.org/breweries")
       .then((response) => {
