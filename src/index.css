@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right,
     rgba(7, 27, 81, 1) 0%,
     rgba(0, 128, 128, 1) 100%
@@ -14,7 +14,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 }
 
 code {

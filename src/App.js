@@ -76,15 +76,17 @@ class App extends Component {
         >
           back
         </button> */}
-        {showBackbtn()}
-        <h1 className="current-page">Page: {this.state.beerPage}</h1>
-        <button
-          onClick={(e) => this.setState({ beerPage: this.state.beerPage + 1 })}
-        >
-          next
-        </button>
-
-        
+        <div className="pageBtns">
+          {showBackbtn()}
+          <h1 className="current-page">Page: {this.state.beerPage}</h1>
+          <button
+            onClick={(e) =>
+              this.setState({ beerPage: this.state.beerPage + 1 })
+            }
+          >
+            next
+          </button>
+        </div>
       </div>
     );
   }
