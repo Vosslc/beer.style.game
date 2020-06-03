@@ -59,13 +59,13 @@ export const Card = (props) => (
               style={{
                 color: "black",
                 fontSize: "40px",
-                fontFamily: "Titillium Web"
+                fontFamily: "Titillium Web",
               }}
             >
               <strong>Beer Description:</strong>
             </p>
-            <hr />
-            <p className="beer-card-description" style={pTagFontColor}>
+
+            <div className="beer-card-description" style={pTagFontColor}>
               {" "}
               <p>
                 Abv : {""}
@@ -84,7 +84,7 @@ export const Card = (props) => (
                 {props.brewery.target_fg}
               </p>
               {/* {props.brewery.description} */}
-            </p>
+            </div>
           </div>
         </div>
       </div>
