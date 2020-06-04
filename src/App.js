@@ -26,6 +26,10 @@ class App extends Component {
       this.getBeerPage();
     }
   };
+  
+  handleChange = (e) => {
+    this.setState({ searchField: e.target.value });
+  };
 
   getBeerPage = () => {
     fetch(
