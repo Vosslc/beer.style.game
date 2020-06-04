@@ -5,10 +5,10 @@ const pTagFontColor = {
   color: "black",
   fontSize: "20px",
   display: "flex",
-  background: "#e7d3ce",
+  // background: "#e7d3ce",
   background: "-webkit-linear-gradient(45deg, #e7d3ce 0%, #596a72 100%)",
-  background: "-o-linear-gradient(45deg, #cedce7 0%, #596a72 100%)",
-  background: "linear-gradient(45deg, #cedce7 0%, #596a72 100%)",
+  // background: "-o-linear-gradient(45deg, #cedce7 0%, #596a72 100%)",
+  // background: "linear-gradient(45deg, #cedce7 0%, #596a72 100%)",
   opacity: ".9",
 };
 
@@ -30,8 +30,9 @@ export const Card = (props) => (
   // <div className="wrapper, card-container">
 
   <div className="cols">
-    <div className="col" ontouchstart="this.classList.toggle('hover');">
-      <div class="container">
+    {/* ? ADD THIS TO THE DIV BELOW onTouchStart={this.classList.toggle('hover')} */}
+    <div className="col">
+      <div className="container">
         <div
           className="front"
           // style={{

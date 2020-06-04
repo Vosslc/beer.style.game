@@ -36,7 +36,7 @@ class App extends Component {
   // }
 
   render() {
-    console.log(this.state.beers);
+    
     const { beers, searchField } = this.state;
     const filteredBeers = beers.filter((beers) =>
       beers.name.toLowerCase().includes(searchField.toLowerCase())
