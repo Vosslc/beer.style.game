@@ -34,8 +34,7 @@
   overflow: scroll;
 }
 
-.beer-app {
-}
+
 
 #search-beers {
   float: center;
@@ -75,5 +74,19 @@
 }
 
 .pageBtns {
-  // display: flex;
+  padding-top: 50px;
+  margin-bottom: 25px;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+.next-btn{
+  margin-left: 20px;
+}
+.back-btn{
+  margin-right: 20px;
 }

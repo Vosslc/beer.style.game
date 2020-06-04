@@ -3,6 +3,7 @@ import "./App.scss";
 
 import { CardList } from "./Components/CardList/card-list.Component";
 import { SearchBox } from "./Components/search-box/search-box";
+import { MDBBtn } from "mdbreact";
 // import beerImg from "./Assets/AppAssests/beerImg.jpg"
 
 class App extends Component {
@@ -46,14 +47,16 @@ class App extends Component {
     const showBackbtn = () => {
       if (beerPage >= 2) {
         return (
-          <button
+          <MDBBtn
+          className = "back-btn"
+            color="info"
             onClick={(e) =>
               this.setState({ beerPage: this.state.beerPage - 1 })
             }
           >
             {" "}
             Back{" "}
-          </button>
+          </MDBBtn>
         );
       } else {
         return;
@@ -74,13 +77,16 @@ class App extends Component {
         <div className="pageBtns">
           {showBackbtn()}
           <h1 className="current-page">Page: {this.state.beerPage}</h1>
-          <button
+
+          <MDBBtn
+            className="next-btn"
+            color="info"
             onClick={(e) =>
               this.setState({ beerPage: this.state.beerPage + 1 })
             }
           >
-            next
-          </button>
+            Next
+          </MDBBtn>
         </div>
       </div>
     );
