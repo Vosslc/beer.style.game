@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/Brewdog-Search/static/css/main.90192018.chunk.css",
-    "main.js": "/Brewdog-Search/static/js/main.2af27b7c.chunk.js",
-    "main.js.map": "/Brewdog-Search/static/js/main.2af27b7c.chunk.js.map",
-    "runtime-main.js": "/Brewdog-Search/static/js/runtime-main.9bc35ab4.js",
-    "runtime-main.js.map": "/Brewdog-Search/static/js/runtime-main.9bc35ab4.js.map",
-    "static/css/2.af3c1da9.chunk.css": "/Brewdog-Search/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.bf5ae8a1.chunk.js": "/Brewdog-Search/static/js/2.bf5ae8a1.chunk.js",
-    "static/js/2.bf5ae8a1.chunk.js.map": "/Brewdog-Search/static/js/2.bf5ae8a1.chunk.js.map",
+    "main.js": "/Brewdog-Search/static/js/main.709327e9.chunk.js",
+    "main.js.map": "/Brewdog-Search/static/js/main.709327e9.chunk.js.map",
+    "runtime-main.js": "/Brewdog-Search/static/js/runtime-main.3030d004.js",
+    "runtime-main.js.map": "/Brewdog-Search/static/js/runtime-main.3030d004.js.map",
+    "static/css/2.de424728.chunk.css": "/Brewdog-Search/static/css/2.de424728.chunk.css",
+    "static/js/2.6e6dbf33.chunk.js": "/Brewdog-Search/static/js/2.6e6dbf33.chunk.js",
+    "static/js/2.6e6dbf33.chunk.js.map": "/Brewdog-Search/static/js/2.6e6dbf33.chunk.js.map",
     "index.html": "/Brewdog-Search/index.html",
-    "precache-manifest.06dcadff10a053d4ebfa7ee3f9064229.js": "/Brewdog-Search/precache-manifest.06dcadff10a053d4ebfa7ee3f9064229.js",
+    "precache-manifest.9929725a1a66192b9faa5bf2f01fedf3.js": "/Brewdog-Search/precache-manifest.9929725a1a66192b9faa5bf2f01fedf3.js",
     "service-worker.js": "/Brewdog-Search/service-worker.js",
-    "static/css/2.af3c1da9.chunk.css.map": "/Brewdog-Search/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/2.de424728.chunk.css.map": "/Brewdog-Search/static/css/2.de424728.chunk.css.map",
     "static/css/main.90192018.chunk.css.map": "/Brewdog-Search/static/css/main.90192018.chunk.css.map",
-    "static/js/2.bf5ae8a1.chunk.js.LICENSE.txt": "/Brewdog-Search/static/js/2.bf5ae8a1.chunk.js.LICENSE.txt"
+    "static/js/2.6e6dbf33.chunk.js.LICENSE.txt": "/Brewdog-Search/static/js/2.6e6dbf33.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.9bc35ab4.js",
-    "static/css/2.af3c1da9.chunk.css",
-    "static/js/2.bf5ae8a1.chunk.js",
+    "static/js/runtime-main.3030d004.js",
+    "static/css/2.de424728.chunk.css",
+    "static/js/2.6e6dbf33.chunk.js",
     "static/css/main.90192018.chunk.css",
-    "static/js/main.2af27b7c.chunk.js"
+    "static/js/main.709327e9.chunk.js"
   ]
 }
