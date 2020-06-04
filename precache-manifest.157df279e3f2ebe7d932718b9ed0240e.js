@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cc03d24d2925d53bb8f1199b7966d4fa",
+    "revision": "b26e534d341746a493394d49e168416c",
     "url": "/Brewdog-Search/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Brewdog-Search/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "44a84712e50cc6bae6ae",
+    "revision": "ddcc2f8c840a275dc4d8",
     "url": "/Brewdog-Search/static/css/main.7b4d7ff5.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Brewdog-Search/static/js/2.7b54c8e5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "44a84712e50cc6bae6ae",
-    "url": "/Brewdog-Search/static/js/main.173cce87.chunk.js"
+    "revision": "ddcc2f8c840a275dc4d8",
+    "url": "/Brewdog-Search/static/js/main.85be4e51.chunk.js"
   },
   {
     "revision": "be5fd549f730f36bf172",

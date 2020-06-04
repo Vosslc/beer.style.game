@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Brewdog-Search/static/css/main.7b4d7ff5.chunk.css",
-    "main.js": "/Brewdog-Search/static/js/main.173cce87.chunk.js",
-    "main.js.map": "/Brewdog-Search/static/js/main.173cce87.chunk.js.map",
+    "main.js": "/Brewdog-Search/static/js/main.85be4e51.chunk.js",
+    "main.js.map": "/Brewdog-Search/static/js/main.85be4e51.chunk.js.map",
     "runtime-main.js": "/Brewdog-Search/static/js/runtime-main.3030d004.js",
     "runtime-main.js.map": "/Brewdog-Search/static/js/runtime-main.3030d004.js.map",
     "static/css/2.de424728.chunk.css": "/Brewdog-Search/static/css/2.de424728.chunk.css",
     "static/js/2.7b54c8e5.chunk.js": "/Brewdog-Search/static/js/2.7b54c8e5.chunk.js",
     "static/js/2.7b54c8e5.chunk.js.map": "/Brewdog-Search/static/js/2.7b54c8e5.chunk.js.map",
     "index.html": "/Brewdog-Search/index.html",
-    "precache-manifest.65a6b305a7809e109fe28184bf5567e8.js": "/Brewdog-Search/precache-manifest.65a6b305a7809e109fe28184bf5567e8.js",
+    "precache-manifest.157df279e3f2ebe7d932718b9ed0240e.js": "/Brewdog-Search/precache-manifest.157df279e3f2ebe7d932718b9ed0240e.js",
     "service-worker.js": "/Brewdog-Search/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/Brewdog-Search/static/css/2.de424728.chunk.css.map",
     "static/css/main.7b4d7ff5.chunk.css.map": "/Brewdog-Search/static/css/main.7b4d7ff5.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.de424728.chunk.css",
     "static/js/2.7b54c8e5.chunk.js",
     "static/css/main.7b4d7ff5.chunk.css",
-    "static/js/main.173cce87.chunk.js"
+    "static/js/main.85be4e51.chunk.js"
   ]
 }
