@@ -3,7 +3,12 @@
   border: none;
   outline: none;
   padding: 10px;
-  width: 150px;
+  width: 300px;
   line-height: 30px;
   margin-bottom: 30px;
+  text-align: center;
+  
 }
+/* ! Code below will allow for a transparent placeholde on focus */
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }

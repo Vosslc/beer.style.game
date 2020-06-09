@@ -50,6 +50,8 @@ class App extends Component {
     // window.location.reload(false)
   }
 
+  
+
   render() {
     const { beers, searchField } = this.state;
     const filteredBeers = beers.filter((beers) =>
@@ -82,7 +84,8 @@ class App extends Component {
           <p className="app-title"> Brewdog Beer Search</p>
 
           <SearchBox
-            placeholder="Find Beer . . ."
+            // placeholder="Find Beer . . ."
+            placeholder={`Search for beer on page ` + this.state.beerPage + ` . . . `}
             handleChange={this.handleChange}
             
           />
