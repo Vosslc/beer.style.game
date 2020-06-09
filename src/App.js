@@ -4,6 +4,7 @@ import "./App.scss";
 import { CardList } from "./Components/CardList/card-list.Component";
 import { SearchBox } from "./Components/search-box/search-box";
 import { MDBBtn } from "mdbreact";
+import { animateScroll as scroll } from "react-scroll";
 // import beerImg from "./Assets/AppAssests/beerImg.jpg"
 
 class App extends Component {
@@ -15,6 +16,8 @@ class App extends Component {
       searchField: "",
       beerPage: 1,
     };
+    // this.childDiv = React.createRef();
+    this.scrollToTop = this.scrollToTop.bind(this);
   }
 
   componentDidMount = () => {
@@ -26,7 +29,7 @@ class App extends Component {
       this.getBeerPage();
     }
   };
-  
+
   handleChange = (e) => {
     this.setState({ searchField: e.target.value });
   };
@@ -41,6 +44,12 @@ class App extends Component {
       .then((beers) => this.setState({ beers: beers }));
   };
 
+  scrollToTop() {
+    this.setState({ beerPage: this.state.beerPage + 1 });
+    scroll.scrollMore(0)
+    // window.location.reload(false)
+  }
+
   render() {
     const { beers, searchField } = this.state;
     const filteredBeers = beers.filter((beers) =>
@@ -52,7 +61,7 @@ class App extends Component {
       if (beerPage >= 2) {
         return (
           <MDBBtn
-          className = "back-btn"
+            className="back-btn"
             color="info"
             onClick={(e) =>
               this.setState({ beerPage: this.state.beerPage - 1 })
@@ -75,22 +84,25 @@ class App extends Component {
           <SearchBox
             placeholder="Find Beer . . ."
             handleChange={this.handleChange}
+            
           />
         </div>
         <CardList beers={filteredBeers} />
         <div className="pageBtns">
           {showBackbtn()}
           <h1 className="current-page">Page: {this.state.beerPage}</h1>
-
-          <MDBBtn
-            className="next-btn"
-            color="info"
-            onClick={(e) =>
-              this.setState({ beerPage: this.state.beerPage + 1 })
-            }
-          >
-            Next
-          </MDBBtn>
+          
+            <MDBBtn
+              className="next-btn"
+              color="info"
+              // onClick={(e) =>
+              //   this.setState({ beerPage: this.state.beerPage + 1})
+              // }
+              onClick={this.scrollToTop}
+            >
+              Next
+            </MDBBtn>
+          
         </div>
       </div>
     );
