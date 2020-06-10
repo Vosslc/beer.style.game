@@ -191,7 +191,8 @@ h1 {
 }
 
 .cols {
-  width: 45vw;
+  /* width: 35vw; */
+  width: 800px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
