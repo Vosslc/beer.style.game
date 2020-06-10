@@ -191,14 +191,14 @@ h1 {
 }
 
 .cols {
-  /* width: 35vw; */
-  width: 800px;
+  width: 35vw;
+  /* width: 800px; */
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
-  align-content: stretch;
+  align-content: stretch; */
   display: inline-block;
 }
 
